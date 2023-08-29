@@ -1,0 +1,14 @@
+.footer{
+    background-color: #1E1E1E;
+  }
+  
+  .iconFooter{
+    width: 6vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo{
+    height: 50px;
+    width: 130px;
+  }
