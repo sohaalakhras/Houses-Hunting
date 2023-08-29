@@ -1,0 +1,85 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.root {
+    width: 85%;
+    padding-bottom: 3em;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 5em;
+  min-height: 450px;
+  background-image:  url(../../Utils/images/hero.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.divhero{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding-bottom: 5em;
+}
+
+.herotext{
+    color: white;
+    
+}
+
+
+.housesSection{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.sectionTitle{
+    font-size: 40px;
+    font-weight:bold;
+    color: #1E1E1E;
+    margin-left: 3em;
+    text-align: center;
+    
+}
+
+
+
+  .herosearch {
+    border-radius: 50px;     
+    background: #f0f0f0; 
+    width: 600px;    
+    border: none;  
+    outline: none;
+  }
+
+.herosearch svg {
+  color: #009688;
+  font-size: 2em;
+}
+
+
+
+
+.card {
+  margin-top: 2em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .divhero , .header {
+   display: none;
+  }
+}
+
+

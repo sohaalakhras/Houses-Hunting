@@ -1,0 +1,26 @@
+.divabout {
+  height: 690px;
+}
+
+.titleAbout {
+font-size: 30px !important;
+font-weight: bold  !important;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.aboutPara  {
+  font-size: 0.9em  !important;
+  color: #1e1e1e  !important;
+}
+
+.blueText important{
+  color: #009688;
+}
+
+.aboutImg{
+  padding-top: 100px;
+  padding-bottom: 80px;
+  border-radius: 20px;
+}
