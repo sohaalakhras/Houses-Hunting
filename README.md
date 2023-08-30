@@ -29,7 +29,7 @@
 ### 👤Lead Mentor 
 #### Yasmeen Attallah
 ### 👤Team Members 
-#### Soh Al-akhras
+#### Soha Al-akhras
 # 🔍Resources 
  [https://material-ui.com/](https://material-ui.com/)
  
