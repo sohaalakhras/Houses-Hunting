@@ -9,7 +9,6 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
-import EditCalendarIcon from "@mui/icons-material/EditCalendar";
 import TableContainer from "@mui/material/TableContainer";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
@@ -35,7 +34,7 @@ function MyHouses() {
     (async () => {
       try {
         const response = await fetch(
-          "https://my-json-server.typicode.com/SajaRa20/newapi/houses"
+          "https://my-json-server.typicode.com/sohaalakhras/mockread-api/houses"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -51,7 +50,7 @@ function MyHouses() {
   const deleteHouse = async (houseId) => {
     try {
       const response = await fetch(
-        `https://my-json-server.typicode.com/SajaRa20/newapi/houses/${houseId}`,
+        `https://my-json-server.typicode.com/sohaalakhras/mockread-api/houses${houseId}`,
         {
           method: "DELETE",
         }
@@ -61,7 +60,7 @@ function MyHouses() {
         setOpenalert(true);
       }
 
-      // Assuming you want to refresh the list of houses after deletion
+    
       const updatedHouses = houses.filter((house) => house.id !== houseId);
       setHouses(updatedHouses);
     } catch (error) {
@@ -74,7 +73,7 @@ function MyHouses() {
     (async () => {
       try {
         const response = await fetch(
-          "https://my-json-server.typicode.com/SajaRa20/newapi/houses"
+          "https://my-json-server.typicode.com/sohaalakhras/mockread-api/houses"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -133,9 +132,7 @@ function MyHouses() {
                       >
                         <DeleteIcon />
                       </Button>
-                      <Button style={{ color: "#1e1e1e" }} color="primary">
-                        <EditCalendarIcon />
-                      </Button>
+                     
                     </TableCell>
                   </TableRow>
                   <Dialog open={open} onClose={() => setOpen(false)}>

@@ -1,13 +1,10 @@
 import React from 'react';
-
 import Container from "@mui/material/Container";
-
 import Grid from "@mui/material/Grid";
-
 import Loading from '../Loading'
 import Card from '../Card';
 
-import './style.css'
+
 
 function CardContainer({ houses }) {
   return (

@@ -20,8 +20,9 @@ import DialogTitle from "@mui/material/DialogTitle";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import { HOUSES } from '../../Utils/routes.constant';
-function Favorite() {
 
+
+function Favorite() {
   const navigate = useNavigate();
   const handleInfoIcon = () => {
     navigate("DetailsHouse");
@@ -43,7 +44,7 @@ function Favorite() {
     "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
+  
     "&:last-child td, &:last-child th": {
       border: 0,
     },
@@ -74,7 +75,7 @@ function Favorite() {
         setOpenalert(true);
       }
 
-      // Assuming you want to refresh the list of houses after deletion
+
       const updatedHouses = houses.filter((house) => house.id !== houseId);
       setHouses(updatedHouses);
     } catch (error) {

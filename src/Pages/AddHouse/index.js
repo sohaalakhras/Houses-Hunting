@@ -83,7 +83,7 @@ function AddHouse() {
         image,
       };
       useEffect(() => {
-        fetch("https://my-json-server.typicode.com/SajaRa20/newapi/houses", {
+        fetch("https://my-json-server.typicode.com/sohaalakhras/mockread-api/houses", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

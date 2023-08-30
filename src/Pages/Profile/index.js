@@ -16,6 +16,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
+// import PersonIcon from '@mui/icons-material/Person';
 
 
 function Profile() {
@@ -96,7 +97,11 @@ function Profile() {
             src={image}
             sx={{ width: 150, height: 150 }}
           />
-     
+         
+         {/* <MenuItem onClick={handleProfile}> <PersonIcon/> My Profile </MenuItem> */}
+
+
+
         </div>
         <Table>
           <TableBody>

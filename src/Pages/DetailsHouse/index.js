@@ -13,14 +13,9 @@ import PhoneRoundedIcon from "@mui/icons-material/LocalPhone";
 import LocalHotelIcon from "@mui/icons-material/LocalHotel";
 import BathroomIcon from "@mui/icons-material/Bathroom";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-
-
 import Button from "@mui/material/Button";
-
 import { fakeImage } from "../../Utils/staticData";
-
 import Loading from "../../Components/Loading";
-
 import "./style.css";
 
 function DetailsHouse() {
@@ -101,9 +96,6 @@ function DetailsHouse() {
         <Grid container>
           {console.log(house)}
           <Grid xs="12" sm="12" md="12" lg="12" className="imgSection">
-            {/* <div className="imageBox">
-              <img src={house.image || fakeImage} alt="house" />
-            </div> */}
             <div className="video">
               <iframe
                 width="1150"
@@ -194,10 +186,7 @@ function DetailsHouse() {
           </Grid>
           <Grid xs="12" sm="12" md="12" lg="4">
            
-
-
             <div className="descAddress">
-            
               <div className="name">
                 <Typography>
                   <AccountCircleIcon style={{ fontSize:"40px"}} />
