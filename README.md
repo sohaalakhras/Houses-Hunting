@@ -18,9 +18,6 @@
 # ✈️User Journey 
 #### As a user,I have the ability to view all the houses currently up for rent. I can conduct searches to locate houses, and I have the option to save any houses I like to a list of favorites. All my information is stored within my profile.
 
-# 🎨Prototype 
-[Figma Link](https://www.figma.com/file/c2EQJ3W1lSobO8MGnvLbzR/House-Hunting?type=design&node-id=0%3A1&mode=design&t=otNwbZVebqaWT1Ze-1)
-
 # 💻Technologies 
 #### ReactJS (Hooks).
 #### Material UI
