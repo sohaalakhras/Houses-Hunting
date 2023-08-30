@@ -16,7 +16,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
-// import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 function Profile() {
@@ -91,17 +91,17 @@ function Profile() {
         >
           My Profile
         </Typography>
-        <div className="userAvatar"  style={{marginLeft:'45%', marginBottom:'40px' }}>
-          <Avatar
-            className="avatar"
-            src={image}
-            sx={{ width: 150, height: 150 }}
-          />
-         
-         {/* <MenuItem onClick={handleProfile}> <PersonIcon/> My Profile </MenuItem> */}
-
-
-
+        <div className="userAvatar" >
+           <PersonIcon   style={{
+            width:'7%', 
+            height:'7%',
+             backgroundColor:'#7d7d7d',
+              color:'white', 
+              borderRadius:'70px',
+              padding:'12px',
+              marginLeft:'45%',
+              marginBottom:'30px',
+              }}/>  
         </div>
         <Table>
           <TableBody>

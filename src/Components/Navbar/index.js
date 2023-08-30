@@ -87,7 +87,6 @@ const handleout = () => {
   try {
     setOpenSnackbar(true);
     logout();
-    // setIsAuth(false); 
     navigate("/");
   } catch (err) {
     setError('Internal server Error');
