@@ -16,6 +16,9 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import PlaceIcon from '@mui/icons-material/Place';
 import { Box } from "@mui/system";
+import InfoIcon from '@mui/icons-material/Info';
+import { Link } from "react-router-dom";
+import { HOUSES } from '../../Utils/routes.constant';
 
 function MyHouses() {
   const [houses, setHouses] = useState([]);
@@ -60,7 +63,7 @@ function MyHouses() {
         setOpenalert(true);
       }
 
-    
+
       const updatedHouses = houses.filter((house) => house.id !== houseId);
       setHouses(updatedHouses);
     } catch (error) {
@@ -88,19 +91,19 @@ function MyHouses() {
 
   return (
     <>
-     
-     <Typography  style={{ fontWeight:'600', marginTop:'120px'}}
-          variant="h6"
-          textAlign="center"
-          paddingTop="0.5em"
-          paddingBottom="0.5em"
-          color="#1e1e1e"
-        >
-          My Houses
-        </Typography>
 
-      <TableContainer component={Paper}  style={{ width:'800px', borderRadius:'' ,marginLeft:'25%', marginBottom:'120px' }} >
-       
+      <Typography style={{ fontWeight: '600', marginTop: '120px' }}
+        variant="h6"
+        textAlign="center"
+        paddingTop="0.5em"
+        paddingBottom="0.5em"
+        color="#1e1e1e"
+      >
+        My Houses
+      </Typography>
+
+      <TableContainer component={Paper} style={{ width: '800px', borderRadius: '', marginLeft: '25%', marginBottom: '120px' }} >
+
         <Table>
           <TableBody>
             {houses.length ? (
@@ -108,22 +111,22 @@ function MyHouses() {
                 <>
                   <TableRow align="right">
                     <TableCell>
-                      <img className="img" src={house.image} alt="house " style={{ height:'100px'}} />
+                      <img className="img" src={house.image} alt="house " style={{ height: '100px' }} />
                     </TableCell>
-                    <TableCell style={{ color: "#1e1e1e", fontSize: "20px",fontWeight:'600'  }}>
-                      {house.title} 
-                     <Box  style={{ color: "red", fontSize: "20px",fontWeight:'600'}}>{house.price} $ </Box> 
-                   
-                      <Box style={{ color: "#7d7d7d", fontSize:"18px",fontWeight:'300' }}>{house.description .slice(0, 55)}  </Box>
+                    <TableCell style={{ color: "#1e1e1e", fontSize: "20px", fontWeight: '600' }}>
+                      {house.title}
+                      <Box style={{ color: "red", fontSize: "20px", fontWeight: '600' }}>{house.price} $ </Box>
+
+                      <Box style={{ color: "#7d7d7d", fontSize: "18px", fontWeight: '300' }}>{house.description.slice(0, 55)}  </Box>
                     </TableCell>
-                
+
                     <TableCell style={{ color: "#7D7D7D", fontSize: "20px" }}>
                       {" "}
-                      <PlaceIcon style={{fontSize: "22", color:'#009688'}}/>
+                      <PlaceIcon style={{ fontSize: "22", color: '#009688' }} />
                       {house.city}{" "}
                     </TableCell>
 
-                  
+
                     <TableCell>
                       <Button
                         style={{ color: "red" }}
@@ -132,7 +135,16 @@ function MyHouses() {
                       >
                         <DeleteIcon />
                       </Button>
-                     
+                      <Button style={{ marginTop: '18px' }} >
+                        <Link
+                          to={`${HOUSES}/${house.id}`}
+                          style={{ color: "#009688" }}
+                          color="primary"
+                        >
+                          <InfoIcon />
+                        </Link>
+                      </Button>
+
                     </TableCell>
                   </TableRow>
                   <Dialog open={open} onClose={() => setOpen(false)}>
@@ -154,6 +166,7 @@ function MyHouses() {
                       >
                         Delete
                       </Button>
+
                     </DialogActions>
                   </Dialog>
                 </>
@@ -170,7 +183,7 @@ function MyHouses() {
         </Table>
       </TableContainer>
 
-      </>
+    </>
   );
 }
 export default MyHouses;

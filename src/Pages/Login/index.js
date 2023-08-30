@@ -35,21 +35,19 @@ const handleSignup = (event) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
     try {
-      // await validationSchema.validate({ username, password }, { abortEarly: false });
+
+      await validationSchema.validate({ username : name, password }, { abortEarly: false });
+
       const response = await fetch('https://my-json-server.typicode.com/sohaalakhras/mockread-api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ name, password }),
       });
-      console.log('saja');
       if (response.ok) {
-        setOpen(true);
-        login({ username, password },  { accessToken: username, refreshToken: username })
-       //  setIsAuth(true);
+        login({ name, password },  { accessToken: name, refreshToken: name })
         navigate("/");
       } else {
       }
@@ -80,7 +78,7 @@ const handleSignup = (event) => {
        and typesetting industry. </Typography>
         <Typography variant="h6" className="logInTitel"> Login</Typography>
               <FormControl defaultValue="" className="formlogin" required  >
-              {error && <Typography variant="p" className="error">{error.name}</Typography>}
+              {error && <Typography variant="p" className="error">{error.username}</Typography>}
             <TextField
             className="lablelogin"
               id="outlined-basic"
@@ -120,7 +118,7 @@ const handleSignup = (event) => {
              >
               Login
             </Button>
-            <Typography variant="p" className="Account">  You donts have Account?<span onClick={handleSignup}> Signup here</span></Typography>
+            <Typography variant="p" className="Account">  You don't have Account?<span onClick={handleSignup}> Signup here</span></Typography>
           </FormControl>
       </article>
     </Grid>

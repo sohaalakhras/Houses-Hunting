@@ -45,15 +45,12 @@ padding-bottom: 5em;
 
 
 .sectionTitle{
-    font-size: 40px;
-    font-weight:bold;
-    color: #1E1E1E;
-    margin-left: 3em;
-    text-align: center;
+    font-size: 30px !important;
+    font-weight:600 !important;
+    color: #1E1E1E !important;
+    text-align: center !important;
     
 }
-
-
 
   .herosearch {
     border-radius: 50px;     
