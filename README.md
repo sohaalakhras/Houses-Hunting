@@ -63,7 +63,8 @@
  
 [https://www.npmjs.com/package/yup](https://www.npmjs.com/package/yup)
 
-# 🎨Prototype 
+# 🎨Design Website 
+
 [Figma Link](https://www.figma.com/file/c2EQJ3W1lSobO8MGnvLbzR/House-Hunting?type=design&node-id=0%3A1&mode=design&t=otNwbZVebqaWT1Ze-1)
 
 
