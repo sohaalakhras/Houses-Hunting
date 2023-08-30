@@ -1,9 +1,9 @@
 # 🏠House Hunting Website 
-#### The house hunting website serves as the ultimate platform to discover your ideal home! Our platform provides a smooth and instinctive journey, aiding you in locating the flawless residence that suits your requirements and desires.
+#### The house hunting website serves as the ultimate platform aims to assist people in finding the suitable home according to their preferences and aid homeowners in marketing their properties. 
 # 🚩Main problem 
-####  The majority of individuals in search of a residence encounter significant challenges when attempting to explore various neighborhoods and locations in order to discover a suitable house that aligns with their preferences and financial means.
+####  The majority of individuals searching for housing face significant challenges when attempting to explore different neighborhoods and locations in order to discover a suitable home that aligns with their preferences and financial capabilities. Others may encounter difficulty in marketing and renting out their owned properties.
 # 💡Solution 
-#### Build web-based platform designed to help individuals find their dream homes ,The website aims to provide a user-friendly and efficient experience for home seekers.
+#### I have built this platform to serve both parties and facilitate their connection (homeowner, tenant) through a House Hunting Website. This website aims to assist people in finding the suitable home according to their preferences and aid homeowners in marketing their properties. Our goal is to provide a user-friendly experience for our customers.
 # 📝User Stories
 ### As a Renter and owner user:
   - I can Sign up into the website
