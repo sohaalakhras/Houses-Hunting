@@ -7,10 +7,9 @@ import IconButton from '@mui/material/IconButton';
 import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import logo from '../../Utils/images/logo.png';
-
 import './style.css';
 
 function Footer() {
@@ -22,7 +21,9 @@ function Footer() {
           <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
                 <IconButton sx={{ p: 0 }}>
+                  <a href='/'>
                   <img src={logo} alt='logo' className='logo'/>
+                  </a>
                 </IconButton>
               </Tooltip>
           </Box>
@@ -38,9 +39,9 @@ function Footer() {
           <Box sx={{ flexGrow: 1 }} />
        
           <Box className='iconFooter'>
-            <InstagramIcon/>
-            <TwitterIcon/>
-            <WhatsAppIcon/>
+            <a href='https://www.instagram.com/soha_eyad99/' target='_blank' style={{color:'white'}}> < InstagramIcon /> </a>
+            <a href='https://web.whatsapp.com/' target='_blank' style={{color:'white'}}> <WhatsAppIcon /> </a>
+            <a href='https://www.facebook.com/soha.eiad.58173/?locale=ar_AR' target='_blank' style={{color:'white'}}><FacebookIcon /></a>
           </Box>
 
         </Toolbar>

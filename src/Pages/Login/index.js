@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import * as yup from 'yup';
 import { useNavigate } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -9,15 +10,16 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import image from "../../Utils/images/login.png";
 import AuthContext from "../../Components/Context/AuthContext";
-
+import validationSchema from "../../Utils/validations/login"
 import './style.css';
 
 function Login() {
-  const {isAuth, setIsAuth } = useContext(AuthContext);
+  const { isAuth, setIsAuth, login } = useContext(AuthContext);
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState();
+  const validationErrors = {};
 
 const handleSignup = (event) => {
   navigate("/register");
@@ -35,21 +37,29 @@ const handleSignup = (event) => {
     event.preventDefault();
   
     try {
+      // await validationSchema.validate({ username, password }, { abortEarly: false });
       const response = await fetch('https://my-json-server.typicode.com/sohaalakhras/mockread-api/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, password }),
+        body: JSON.stringify({ username, password }),
       });
-  
+      console.log('saja');
       if (response.ok) {
-        setIsAuth(true);
+        setOpen(true);
+        login({ username, password },  { accessToken: username, refreshToken: username })
+       //  setIsAuth(true);
         navigate("/");
       } else {
       }
     } catch (error) {
-      setError(err.response ? err.response.data.message : err.errors[0]);
+      if (error instanceof yup.ValidationError) {
+        error.inner.forEach(err => {
+          validationErrors[err.path] = err.message;
+        });
+      }
+      setError(validationErrors);
     }
   };
 
@@ -70,6 +80,7 @@ const handleSignup = (event) => {
        and typesetting industry. </Typography>
         <Typography variant="h6" className="logInTitel"> Login</Typography>
               <FormControl defaultValue="" className="formlogin" required  >
+              {error && <Typography variant="p" className="error">{error.name}</Typography>}
             <TextField
             className="lablelogin"
               id="outlined-basic"
@@ -79,7 +90,7 @@ const handleSignup = (event) => {
               value={name}
             />
             <br />
-          
+            {error && <Typography variant="p" className="error">{error.password}</Typography>}
             <TextField
              className="lablelogin"
               type="password"

@@ -25,7 +25,7 @@ import {ADD_HOUSE} from '../../Utils/routes.constant';
 import "../Navbar/style.css";
 
 function NavBar() {
-  const { isAuth, setIsAuth } = useContext(AuthContext);
+  const { isAuth, setIsAuth, logout } = useContext(AuthContext);
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const [anchorElNav, setAnchorElNav] = useState(false);
   const [anchorElUser, setAnchorElUser] = useState(false);
@@ -42,10 +42,7 @@ function NavBar() {
     setOpenSnackbar(false);
   };
 
-  // const handleChange = (event) => {
-  //   setAuth(event.target.checked);
-  // };
-
+  
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -86,15 +83,17 @@ const handleAdd = () => {
   navigate(ADD_HOUSE);
 }
   
-  const handleout = () => {
-    try {
-      setOpenSnackbar(true);
-      setIsAuth(false); 
-      navigate("/");
-    } catch (err) {
-      setError('Internal server Error');
-    }
-  };
+const handleout = () => {
+  try {
+    setOpenSnackbar(true);
+    logout();
+    // setIsAuth(false); 
+    navigate("/");
+  } catch (err) {
+    setError('Internal server Error');
+  }
+};
+
 
 
   return (
