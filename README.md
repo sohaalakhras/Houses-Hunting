@@ -53,10 +53,10 @@
  I like to a list of favorites. All my information is stored within my profile.
 
  # 📝Stretch Features 
- #### user can see the location of the house on the map and compare between two houses
- #### create an admin dashboard
- #### admin can view, edit, delete all users and houses
- #### create chat that allows users to contact and negotiate
+ - user can see the location of the house on the map and compare between two houses
+ - create an admin dashboard
+ - admin can view, edit, delete all users and houses
+ - create chat that allows users to contact and negotiate
 
  # 🎨Design Website 
 
