@@ -37,8 +37,8 @@
   - Providing the ability to browse various types of houses through a user-friendly interface.
   - Reducing the effort expended in searching for the suitable house.
 
-# 📝User Stories
-### As a Renter and owner user:
+  # 📝User Stories
+  ### As a Renter and owner user:
   - I can Sign up into the website
   - I can log in into the website
   - I can see all available houses
@@ -48,12 +48,19 @@
  -  I need to create my own profile
  -  I need control panel to manage my houses
 
-# ✈️User Journey 
-#### As a user,I have the ability to view all the houses currently up for rent. I can conduct searches to locate houses, and I have the option to save any houses I like to a list of favorites. All my information is stored within my profile.
+ # ✈️User Journey 
+ #### As a user,I have the ability to view all the houses currently up for rent. I can conduct searches to locate houses, and I have the option to save any houses 
+ I like to a list of favorites. All my information is stored within my profile.
 
-# 🎨Design Website 
+ # 📝Stretch Features 
+ #### user can see the location of the house on the map and compare between two houses
+ #### create an admin dashboard
+ #### admin can view, edit, delete all users and houses
+ #### create chat that allows users to contact and negotiate
 
-[Figma Link](https://www.figma.com/file/c2EQJ3W1lSobO8MGnvLbzR/House-Hunting?type=design&node-id=0%3A1&mode=design&t=otNwbZVebqaWT1Ze-1)
+ # 🎨Design Website 
+
+ [Figma Link](https://www.figma.com/file/c2EQJ3W1lSobO8MGnvLbzR/House-Hunting?type=design&node-id=0%3A1&mode=design&t=otNwbZVebqaWT1Ze-1)
 
 
 # 👥Team
