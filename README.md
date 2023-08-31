@@ -42,15 +42,14 @@
   - I can Sign up into the website
   - I can log in into the website
   - I can see all available houses
- -  I can see specific information about any house
- -  I want to search by different locations, prices and the number of room in the house
- -  I can add houses to my favourite list
- -  I need to create my own profile
- -  I need control panel to manage my houses
+  -  I can see specific information about any house
+  -  I want to search by different locations, prices and the number of room in the house
+  -  I can add houses to my favourite list
+  -  I need to create my own profile
+  -  I need control panel to manage my houses
 
  # ✈️User Journey 
- #### As a user,I have the ability to view all the houses currently up for rent. I can conduct searches to locate houses, and I have the option to save any houses 
- I like to a list of favorites. All my information is stored within my profile.
+ #### As a user,I have the ability to view all the houses currently up for rent. I can conduct searches to locate houses, and I have the option to save any houses I like to a list of favorites. All my information is stored within my profile.
 
  # 📝Stretch Features 
  - user can see the location of the house on the map and compare between two houses
