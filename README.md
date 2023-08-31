@@ -7,9 +7,9 @@
 #### I have built this platform to serve both parties and facilitate their connection (Houses owner, Renter user) through a House Hunting Website. This website aims to assist people in finding the suitable home according to their preferences and aid homeowners in marketing their properties. Our goal is to provide a user-friendly experience for our customers.
 
 # 💻Technologies 
+#### Figma design tool 
 #### ReactJS (Hooks).
 #### Material UI
-#### Yup Validation
 
 # 💻Methodology
 ### Ripple Methodology
